@@ -1,18 +1,24 @@
 # Nome do projeto
 
-Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
+(Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.)
+O/A "nomedosite" é um projeto universitário da PUC Minas desenvolvido por alunos do primeiro período do curso de Ciência da Computação.
+Nossa missão é mostrar que cozinhar pode ser algo simples e prazeroso. Tendo isso em mente construimos um produto voltado para pessoas 
+que buscam praticidade e receitas alternativas. Pouco importa se você é inexperiente ou já sabe cozinhar, se procura por receitas 
+tradicionais ou alternativas, se possui ingredientes limitados ou variados, nosso site é para você.
 
 ## Alunos integrantes da equipe
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Augusto Gomes de Alcântara Bizarria
+* Daniel Costa Braga de Sousa
+* Gabriel Alvarenga
+* Gabriel Diniz Reis Vianna
+* Lucas Franco Zanforlim
+* Marcos Vicenzo Borello
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* Rommel Vieira Carneiro
+* Tamara Simões Silva
 
 ## Instruções de utilização
 
