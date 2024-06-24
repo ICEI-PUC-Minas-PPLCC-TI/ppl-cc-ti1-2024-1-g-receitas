@@ -1,0 +1,43 @@
+[
+    {
+        "nome": "tiramisu",
+        "imagem": "https://receitasmondial.com.br/wp-content/uploads/2024/04/shutterstock_2151535997.jpg"
+    },
+
+    {
+        "nome": "salada-detox",
+        "imagem": "https://receitasmondial.com.br/wp-content/uploads/2024/01/salada-detox-mondial.jpg"
+    },
+
+    {
+        "nome": "bolo-de-cenoura-vegano",
+        "imagem": "https://receitasmondial.com.br/wp-content/uploads/2023/11/Bolo-de-cenoura-vegano-mondial.jpg"
+    },
+    
+    {
+        "nome": "carne-com-batatas",
+        "imagem": "https://receitasmondial.com.br/wp-content/uploads/2024/04/shutterstock_92722804.jpg"
+    },
+
+    {
+        "nome": "torta-holandesa",
+        "imagem": "https://receitasmondial.com.br/wp-content/uploads/2024/04/shutterstock_1776713576.jpg"
+    },
+
+    {
+        "nome": "bacalhau-com-batatas-e-natas",
+        "imagem": "https://receitasmondial.com.br/wp-content/uploads/2023/06/Bacalhau-com-Natas-e-Batatas-mondial-scaled.jpg"
+    },
+
+    {
+        "nome": "brigadeiro-de-olher",
+        "imagem": "https://receitasmondial.com.br/wp-content/uploads/2024/04/brigadeiro-de-colher-mondial.jpg"
+    },
+    
+    {
+        "nome": "peixe-com-vegetais",
+        "imagem": "https://receitasmondial.com.br/wp-content/uploads/2024/04/peixe-com-vegetais-mondial.jpg"
+    }
+
+    
+]
