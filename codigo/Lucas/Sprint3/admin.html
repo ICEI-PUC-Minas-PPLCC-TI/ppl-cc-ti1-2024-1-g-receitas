@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Avaliações - Administrador</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Avaliações Recebidas</h1>
+        <ul id="avaliacoes-lista"></ul>
+    </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var avaliacoesLista = document.getElementById('avaliacoes-lista');
+        var evaluationId = localStorage.getItem('evaluationId') || 1;
+
+        for (var i = 1; i < evaluationId; i++) {
+            var rating = localStorage.getItem('evaluation-' + i);
+            if (rating) {
+                var listItem = document.createElement('li');
+                listItem.textContent = 'Avaliação ' + i + ': ' + rating + ' estrelas';
+                avaliacoesLista.appendChild(listItem);
+            }
+        }
+    });
+</script>
+</body>
+</html>
