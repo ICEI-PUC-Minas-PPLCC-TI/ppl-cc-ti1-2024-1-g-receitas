@@ -1,0 +1,42 @@
+input{
+    width: 13%;
+    height: 25px;
+    padding-left: 20px;
+    font-size: 15px;
+    border: 1px solid;
+    border-radius: 8px;
+}
+.buscar{
+   background-image: linear-gradient(to bottom, #F9B83A 65%, #D49927 65%, #D49927 100%);
+   display: list-item;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#listaReceitas{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 91%;
+    display: none;
+    position: absolute;
+    top: 70px;
+}
+#listaReceitas li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    border: 1px solid #ddd;
+    background: #f6f6f6;
+    padding: 12px;
+}
+.item-name{
+    margin-left: 15px;
+}
+#listaReceitas li a:hover{
+    background: #eee;
+
+}

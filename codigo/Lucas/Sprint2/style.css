@@ -1,0 +1,69 @@
+img {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: auto;
+}
+
+.image-container {
+    background-image: linear-gradient(to bottom, #F9B83A 65%, #D49927 65%, #D49927 100%);
+    display: flex; 
+    padding: 20px;
+    align-items: center; 
+}
+
+h1 {
+    text-align: center;
+    color: white; /* Cor do texto */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px 25px; /* Espaçamento interno */
+    border-radius: 20px; /* Bordas arredondadas */
+    background: linear-gradient(to bottom, #F9B83A 65%, #D49927 65%, #D49927 100%);
+    display: flex; /* Usando flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    margin-top: 20px; /* Adiciona espaço entre a imagem e o texto */
+}
+
+.comida img {
+    width: 700px; /* Defina a largura desejada */
+    height: auto; /* Mantenha a proporção de aspecto */
+    border: 3px solid black; /* Adiciona uma borda branca com 3 pixels de espessura */
+    border-radius: 20px;
+}
+
+
+
+.ingredientes,
+.modo-preparo,
+h2,
+p,
+.elementos::after {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #fcd683; /* Cor de fundo */
+    
+    padding: 10px; /* Espaçamento interno */
+}
+
+h2::after {
+    content: ":"; /* Adiciona os dois pontos após o texto */
+}
+
+.elementos {
+    position: relative; /* Adiciona posicionamento relativo para que possamos posicionar o pseudo-elemento */
+}
+
+.elementos::after {
+    content: ""; /* Adiciona um conteúdo vazio ao pseudo-elemento */
+    display: block; /* Transforma o pseudo-elemento em um bloco */
+    height: 20px; /* Define a altura do espaço entre os elementos */
+    position: absolute; /* Posiciona o pseudo-elemento de forma absoluta */
+    bottom: -20px; /* Move o pseudo-elemento para baixo, criando o espaço entre os elementos */
+    left: 0; /* Alinha o pseudo-elemento à esquerda */
+    right: 0; /* Alinha o pseudo-elemento à direita */
+}
+
+h2,
+p {
+    margin: 0; /* Remover margem */
+}
