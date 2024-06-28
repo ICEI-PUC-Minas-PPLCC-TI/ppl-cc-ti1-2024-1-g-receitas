@@ -1,4 +1,4 @@
-const formulario = document.querySelector(".main-content");
+const formulario = document.querySelector(".main-content-ingrediente");
 const ingredientes = document.querySelector(".ingredientes");
 
 formulario.addEventListener("submit", function(event) {
