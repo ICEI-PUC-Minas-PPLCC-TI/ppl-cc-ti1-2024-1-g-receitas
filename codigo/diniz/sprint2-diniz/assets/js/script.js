@@ -16,22 +16,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 
 
                 data.forEach(receita => {
-                    var caixaReceita = document.createElement("a");
-                    caixaReceita.classList.add("caixa-receita");
-                    // caixaReceita.href = ""
-
-                    var imagemReceita = document.createElement("img");
-                    imagemReceita.src = receita.imagem;
-                    imagemReceita.classList.add("imagem-receita");
+                    const receitasDiv = document.createElement('div');
+                    receitasDiv.className = 'receita';
+                    receitasDiv.innerHTML = `
+                        <a href="../sprint3-diniz/html/pagreceita.html?id=${receita.id}" class="caixa-receita" > 
+                            <img src="${receita.imagem}" class="imagem-receita"/>
+                            <h4 class="nome-receita">${receita.nome}</h4>
+                        </a>     
+                    `;
+                    receitasContainer.appendChild(receitasDiv);
                     
-
-                    var nomeReceita = document.createElement("h4");
-                    nomeReceita.textContent = receita.nome;
-                    nomeReceita.classList.add("nome-receita");
-
-                    caixaReceita.appendChild(imagemReceita);
-                    caixaReceita.appendChild(nomeReceita);
-                    receitasContainer.appendChild(caixaReceita);
                 });
             })
             .catch(error => {

@@ -75,10 +75,12 @@ html {
     overflow: hidden;
     cursor: pointer;
     transition: transform .3s ease;
+    text-decoration: none;
+    height: 100%;
 }
 
 .caixa-receita:hover {
-    transform: scale(1.2);
+    transform: scale(1.12);
 }
 
 .imagem-receita {
