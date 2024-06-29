@@ -36,9 +36,10 @@ header {
 }
 
 .centralizar {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+display: flex;
+justify-content: center; 
+align-items: center; 
+height: 100px; 
 }
 .dropdown {
   position: relative;
@@ -121,4 +122,51 @@ button:hover {
 .centralizar_texto{
   text-align: center;
   color: white;
+}
+.telacard {
+  height: 100%;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  margin-bottom: 20px; 
+}
+.telacard .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.telacard .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0; 
+}
+.telacard img {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 5px; 
+  border-top-right-radius: 5px; 
+}
+.telacard button {
+  margin-top: auto;
+}
+.telacard .card {
+  height: 100%;
+  border-radius: 5px; 
+}
+.botaovernovasreceitas{
+background-color: #5eb4a6; 
+  color: #fff;
+  padding: 10px 20px; 
+  border: none; 
+  text-decoration: none; 
+  display: inline-block; 
+  cursor: pointer; 
+  font-size: 16px; 
+  border-radius: 5px; 
+}
+.botaovernovasreceitas a {
+  color: #fff; 
+  text-decoration: none; 
+}
+.botaovernovasreceitas:hover {
+  background-color: #5eb4a6; 
 }
