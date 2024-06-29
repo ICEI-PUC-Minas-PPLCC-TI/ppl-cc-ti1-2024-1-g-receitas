@@ -49,7 +49,7 @@ html {
     align-items: center;
 }
 
-.botaoAdicionar{
+.botaoAdicionar {
     margin: 20px auto;
     padding: 10px 15px;
     background-color: #D5401F;
@@ -72,7 +72,7 @@ html {
     margin-bottom: 10px; 
 }
 
-.ingrediente1{
+.ingrediente1 {
     background-color: #d5741a; 
     padding: 10px; 
     padding-left: 40px;
@@ -87,7 +87,7 @@ html {
     padding: 5px;
     background-color: #F9B83A;
     border-radius: 10px;
-    border:2px solid white;
+    border: 2px solid white;
     cursor: pointer;
 }
 
@@ -100,7 +100,6 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .main-content-botao {
@@ -114,7 +113,7 @@ html {
     display: block;
     margin: 100px auto;
     padding: 10px 15px;
-    background-color:orange;
+    background-color: orange;
     color: white;
     border-color: #d5741a;
     border-radius: 18px;
@@ -152,7 +151,7 @@ html {
 
 #receitas {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 24px;
     padding: 0 24px 24px 24px;
 }
@@ -165,84 +164,129 @@ html {
     font-size: 18px;
 }
 
-
-@media (max-width: 380px) {
-    #receitas {
-        grid-template-columns: repeat(1, 1fr);
+@media (max-width: 500px) {
+    .main-content-ingredientes, .main-content-botao {
+        margin-top: 50px;
     }
-    .ingredientes label{
+
+    .grid-container, .ingrediente, .ingrediente1 {
+        padding: 5px;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+    }
+
+    #search {
+        margin: 10px auto;
+    }
+
+    .botaoAdicionar {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+        padding: 8px 10px;
         font-size: 14px;
     }
 
-    .ingredientes input {
-        font-size: 12px;
-    }
-
-    .ingredientes button {
-        font-size: 11px;
+    .lixo {
+        margin: 10px;
+        padding: 5px;
+        font-size: 16px;
     }
 
     .botao-cozinhar button {
+        margin: 50px auto;
+        padding: 8px 10px;
         font-size: 14px;
     }
-}
 
-@media (min-width: 381px) and (max-width: 500px) {
     #receitas {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .ingredientes label{
-        font-size: 14px;
-    }
-
-    .ingredientes input {
-        font-size: 12px;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 0 12px 12px 12px;
     }
 
-    .ingredientes button {
-        font-size: 11px;
-    }
-
-    .botao-cozinhar button {
-        font-size: 14px;
-    }
-}
-
-@media (min-width: 501px) and (max-width: 900px) {
-    #receitas {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .ingredientes label{
-        font-size: 16px;
-    }
-
-    .ingredientes input {
-        font-size: 14px;
-    }
-
-    .ingredientes button {
-        font-size: 13px;
-    }
-
-    .botao-cozinhar button{
+    .nome-receita {
         font-size: 16px;
     }
 }
 
-@media (min-width: 901px) {
-    .ingredientes label{
-        font-size: 18px;
+@media (min-width: 501px) and (max-width: 1024px) {
+    .main-content-ingredientes, .main-content-botao {
+        margin-top: 75px;
+        padding: 0 20px;
     }
 
-    .ingredientes input {
-        font-size: 16px;
+    .grid-container, .ingrediente, .ingrediente1 {
+        padding: 10px;
+        padding-left: 30px;
     }
 
-    .ingredientes button {
+    .botaoAdicionar {
+        padding: 10px 12px;
         font-size: 15px;
     }
-    
-    .botao-cozinhar button{
+
+    .lixo {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .botao-cozinhar button {
+        margin: 75px auto;
+        padding: 10px 12px;
+        font-size: 16px;
+    }
+
+    #receitas {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        padding: 0 16px 16px 16px;
+    }
+
+    .nome-receita {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .main-content-ingredientes, .main-content-botao {
+        margin-top: 100px;
+        padding: 0 24px;
+    }
+
+    .grid-container, .ingrediente, .ingrediente1 {
+        padding: 10px;
+        padding-left: 40px;
+    }
+
+    .botaoAdicionar {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .lixo {
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    .botao-cozinhar button {
+        margin: 100px auto;
+        padding: 10px 15px;
         font-size: 18px;
     }
-} 
+
+    #receitas {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 24px;
+        padding: 0 24px 24px 24px;
+    }
+
+    .nome-receita {
+        font-size: 18px;
+    }
+}

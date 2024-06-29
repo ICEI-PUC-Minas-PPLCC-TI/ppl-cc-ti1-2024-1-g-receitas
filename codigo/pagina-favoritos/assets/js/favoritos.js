@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const receitasDiv = document.createElement("div");
       receitasDiv.className = "receita";
       receitasDiv.dataset.id = favorito.receita.id;
-      receitasDiv.innerHTML = `<a href="./html/pagreceita.html?id=${favorito.receita.id}"><img src="${favorito.receita.imagem}" /> <h3>${favorito.receita.nome}</h3></a> <button data-id="${favorito.id}" class="fav-btn"><i class="ph ph-trash fav-btn"></i></button>`;
+      receitasDiv.innerHTML = `<a href="/codigo/pagina-receita/pagReceita.html?id=${favorito.receita.id}"><img src="${favorito.receita.imagem}" /> <h3>${favorito.receita.nome}</h3></a> <button data-id="${favorito.id}" class="fav-btn"><i class="ph ph-trash fav-btn"></i></button>`;
       listaReceitas.appendChild(receitasDiv);
     });
   }

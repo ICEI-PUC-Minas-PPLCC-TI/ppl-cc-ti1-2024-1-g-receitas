@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         const receitasDiv = document.createElement('div');
                         receitasDiv.className = 'receita';
                         receitasDiv.innerHTML = `
-                            <a href="../sprint3-diniz/html/pagreceita.html?id=${receita.id}" class="caixa-receita"> 
+                            <a href="/codigo/pagina-receita/pagReceita.html?id=${receita.id}" class="caixa-receita"> 
                                 <img src="${receita.imagem}" class="imagem-receita"/>
                                 <h4 class="nome-receita">${receita.nome}</h4>
                             </a>     
