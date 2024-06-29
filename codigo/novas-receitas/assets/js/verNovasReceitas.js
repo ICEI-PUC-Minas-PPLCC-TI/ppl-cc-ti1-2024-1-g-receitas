@@ -1,4 +1,4 @@
-const receitasContainer = document.querySelector(".novas_receitas");
+const receitasContainer = document.querySelector(".receitas");
 const urlFetch = "https://d2c501fa-4177-4d7b-a69b-81eb77e71b05-00-1wjvhqjrblfl5.kirk.replit.dev/novas_receitas";
 let receitas = [];
 
@@ -23,7 +23,8 @@ const renderRecipes = () => {
           </div>
         </div>
       </div>
-    `;
+      `
+    ;
   });
 };
 
@@ -39,6 +40,7 @@ const deleteRecipe = async (id) => {
     receitas = receitas.filter(receita => receita.id !== id);
     renderRecipes(); // Update UI
   } catch (error) {
+    alert(error)
     console.error('Erro:', error);
   }
 };

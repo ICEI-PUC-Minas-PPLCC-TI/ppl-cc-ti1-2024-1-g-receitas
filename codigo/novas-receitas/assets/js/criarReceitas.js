@@ -1,6 +1,6 @@
 const receitasContainer = document.querySelector(".receitas")
 const formNovaReceita = document.getElementById("novaReceita")
-const urlFetch = "https://d2c501fa-4177-4d7b-a69b-81eb77e71b05-00-1wjvhqjrblfl5.kirk.replit.dev/receitas"
+const urlFetch = "https://d2c501fa-4177-4d7b-a69b-81eb77e71b05-00-1wjvhqjrblfl5.kirk.replit.dev/novas_receitas"
 
 let ingredientes = []
 let filtros = []
@@ -55,7 +55,7 @@ formNovaReceita.onsubmit = async (e) => {
     },
     body: JSON.stringify(update),
   };
-  fetch('https://d2c501fa-4177-4d7b-a69b-81eb77e71b05-00-1wjvhqjrblfl5.kirk.replit.dev/receitas', options)
+  fetch('https://d2c501fa-4177-4d7b-a69b-81eb77e71b05-00-1wjvhqjrblfl5.kirk.replit.dev/novas_receitas', options)
     .then(data => {
       if (!data.ok) {
         throw Error(data.status);

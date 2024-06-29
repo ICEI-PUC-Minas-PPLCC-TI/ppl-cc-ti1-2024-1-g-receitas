@@ -9,14 +9,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/novasReceitas.css">
   <title>receitas</title>
 </head>
 
 <body>
-  <header><a href="index.html"> <img src="_Logo.png" alt="dawdaw" class="centralizar" width="200" height="100">
+  <header><a href="index.html"> <img src="assets/imgs/_Logo.png" alt="dawdaw" class="centralizar" width="200" height="100">
       </a>
-      <button><a href="novasreceitas2.html">pagina novas receitas</a></button>
+      <button><a href="verNovasReceitas.html">pagina novas receitas</a></button>
   </header>
 
   <div class="row row-cols-1 row-cols-md-2 g-4 receitas"></div>
@@ -37,20 +37,20 @@
     </div>
     <div id="filtros" class="botaomais">
       <input type="text" class="filtro" placeholder="filtro...">
-      <button type="button" onclick="addfiltros()"><img src="icons8-plus-32.png" alt=""></button>
+      <button type="button" onclick="addfiltros()"><img src="assets/imgs/icons8-plus-32.png" alt=""></button>
     </div>
     <div id="ingredientes" class="botaomais">
       <input type="text" class="qtd" placeholder="Quantidade...">
       <input type="text" class="ingd" placeholder="Ingrediente...">
-      <button type="button" onclick="adicionarBarra()"><img src="icons8-plus-32.png" alt=""></button>
+      <button type="button" onclick="adicionarBarra()"><img src="assets/imgs/icons8-plus-32.png" alt=""></button>
     </div>
     <div id="modo_preparo" class="botaomais">
       <input type="text" class="modo_preparo" placeholder="modo_preparo...">
-      <button type="button" onclick="addmodo_preparo()"><img src="icons8-plus-32.png" alt=""></button>
+      <button type="button" onclick="addmodo_preparo()"><img src="assets/imgs/icons8-plus-32.png" alt=""></button>
     </div>
     <button type="submit" class="coloraçao">enviar</button>
   </form>
-  <script src="novasreceitas.js"></script>
+  <script src="assets/js/criarReceitas.js"></script>
 </body>
 
 </html>
