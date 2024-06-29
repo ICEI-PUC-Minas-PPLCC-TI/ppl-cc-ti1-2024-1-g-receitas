@@ -32,6 +32,10 @@ html {
     margin: 0 auto; 
 }
 
+.img-logo img:hover {
+    transform: scale(1.12);
+}
+
 .titulo-fav h1 {
     display: block;
     text-align: center;

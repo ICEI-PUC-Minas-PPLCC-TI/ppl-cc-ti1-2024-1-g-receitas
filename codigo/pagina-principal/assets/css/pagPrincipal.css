@@ -10,11 +10,34 @@ html{
     background-color: #f9b83a;
     z-index:1000;
     padding: 20px;
-    text-align: center;
+}
+
+div.links { 
+    text-align: right;
+    justify-content: right;
+}
+
+div.links a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #D49927;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease
+}
+
+div.links a:hover {
+    transform: scale(1.12);
+}
+
+.header a {
+    text-decoration: none;
     color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 20px;
 }
 
 
@@ -25,10 +48,14 @@ html{
     width: 100%;
     max-width: 200px;
     height: auto;
-    display: block;
+    display: flex;
 }
 
-.header.dropvdown {
+.img-logo img:hover {
+    transform: scale(1.2);
+}
+
+.dropvdown {
     position: relative;
     text-align: right;
     justify-content: right;
@@ -80,6 +107,10 @@ html{
     height: auto;
 }
 
+.sugestao:hover {
+    transform: scale(1.1);
+}
+
 .container .carousel-sugestoes{
     grid-row: 2;
 }
@@ -115,6 +146,11 @@ html{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
+
+.filtros:hover {
+    transform: scale(1.1);
+}
+
 .button-container {
     display: flex;
     justify-content: center;
@@ -123,11 +159,12 @@ html{
   }
   
   button {
-    padding: 10px 20px;
+    background-color: #D5741A;
+    padding: 5px 10px;
     font-size: 16px;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
   }
   
@@ -179,16 +216,4 @@ html{
 
 .dropdown:hover .dropbtn {
     background-color: #F9B83A;
-}
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    background-color: #D49927;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
