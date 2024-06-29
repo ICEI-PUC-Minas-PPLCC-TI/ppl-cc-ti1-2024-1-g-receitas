@@ -1,5 +1,21 @@
 .btn-info {
-    background-color: pink;
-    border-color: #46b8da;
+    background-color: #F9B83A;
+    border-color: #D5401F;
     color: #fff;
+}
+
+.col-md-6 {
+    text-align: center;
+}
+
+.login {
+    background-color: #d5741a;
+    border-radius: 12px;
+}
+
+@media (max-width: 767px) {
+    .col-md-6 {
+        display: block; 
+        text-align: center;
+    }
 }

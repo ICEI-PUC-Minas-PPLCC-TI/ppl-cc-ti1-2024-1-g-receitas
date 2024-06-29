@@ -14,7 +14,7 @@ input{
     justify-content: center;
     position: relative;
 }
-#listaReceitas{
+#listarReceitas{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@ input{
     position: absolute;
     top: 70px;
 }
-#listaReceitas li a{
+#listarReceitas li a{
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -36,7 +36,7 @@ input{
 .item-name{
     margin-left: 15px;
 }
-#listaReceitas li a:hover{
+#listarReceitas li a:hover{
     background: #eee;
 
 }

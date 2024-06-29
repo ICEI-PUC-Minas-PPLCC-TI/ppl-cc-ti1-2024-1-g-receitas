@@ -1,18 +1,13 @@
+const urlR = `https://d2c501fa-4177-4d7b-a69b-81eb77e71b05-00-1wjvhqjrblfl5.kirk.replit.dev/receitas`
 
-
-
-
-
-const url = `https://d2c501fa-4177-4d7b-a69b-81eb77e71b05-00-1wjvhqjrblfl5.kirk.replit.dev/receitas`
-
-fetch(url)
+fetch(urlR)
             .then(res=>res.json())
             .then((json) => {
-                const ul = document.getElementById('listaReceitas');
+                const ul = document.getElementById('listarReceitas');
                 json.forEach((item) => {
                     const li = document.createElement("li");
                     li.innerHTML = `
-                    <a href="#">
+                    <a href="/codigo/pagina-receita/pagReceita.html?id=${item.id}">
                        <img width="50";
                           src="${item.imagem}">
                          <span class="item-name">${item.nome}</span>
@@ -32,7 +27,7 @@ fetch(url)
                 txtValue,
                 count =0
                 input = document.getElementById('inputBusca')
-                ul = document.getElementById('listaReceitas')
+                ul = document.getElementById('listarReceitas')
 
                 filter = input.value.toUpperCase();
 

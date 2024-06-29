@@ -9,8 +9,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script defer src="assets/js/pagPrincipal.js"></script>
+    <link rel="stylesheet" href="assets/css/pagPrincipal.css">
+    <link rel="stylesheet" href="assets/css/barraPesquisa.css">
     <title>Sugestões</title>
 </head>
 
@@ -35,6 +35,12 @@
     </header>
 
     <main>
+        <div class="buscar" >
+            <input  id = "inputBusca" type="text" onkeyup="filtrar()" placeholder="Digite a receita desejada">
+            <ul id="listarReceitas">
+                <script src="assets/js/barraPesquisa.js"></script>        
+            </ul>
+        </div>
         <div class="salad1">
             <a href=""><img src="assets/imgs/salad1.png" alt=""></a>
         </div>
@@ -86,6 +92,7 @@
             </div>
         </div>
     </main>
+    <script src="assets/js/pagPrincipal.js"></script>
 </body>
 
 </html>

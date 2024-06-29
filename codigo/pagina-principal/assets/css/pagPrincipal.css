@@ -6,31 +6,33 @@ html{
 }
 
 .header{
-    position: sticky;
-    top: 0;
-    left: 0;
     width: 100;
     background-color: #f9b83a;
     z-index:1000;
     padding: 20px;
     text-align: center;
     color: #333;
-
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-.img-logo{
-    text-align: center;
-}
 
 .img-logo img{
-    margin: auto;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
     width: 100%;
     max-width: 200px;
     height: auto;
     display: block;
+}
+
+.header.dropvdown {
+    position: relative;
+    text-align: right;
+    justify-content: right;
+    margin-right: 20px;
 }
 
 .salad1 img{

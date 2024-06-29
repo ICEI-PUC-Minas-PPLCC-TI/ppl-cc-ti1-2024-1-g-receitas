@@ -10,11 +10,14 @@ async function carregarReceitas()
     data.forEach(receita => {
         carousel.innerHTML += `
             <div class="carousel-item">
+            <a href="/codigo/pagina-receita/pagReceita.html?id=${receita.id}">
                 <img src="${receita.imagem}" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>${receita.nome}</h5>
                 </div>
+            </a>
             </div>
+        
         `
     })
 
@@ -35,3 +38,4 @@ window.onbeforeunload = () => {
 
 // Call the function when the window loads
 window.onload = carregarReceitas;
+

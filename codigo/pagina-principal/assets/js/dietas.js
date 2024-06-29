@@ -15,14 +15,14 @@ const loadData = async ()  => {
 
   receitas.forEach(receita => {
     receitasContainer.innerHTML += `
-      <div class="col">
-        <a href="#" class="card">
-          <img src="${receita.imagem}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">${receita.nome}</h5>
-          </div>
-        </a>
-      </div>
+        <div class="col">
+          <a href="/codigo/pagina-receita/pagReceita.html?id=${receita.id}" class="card">
+            <img src="${receita.imagem}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">${receita.nome}</h5>
+            </div>
+          </a>
+        </div>
     `
   })
 }
