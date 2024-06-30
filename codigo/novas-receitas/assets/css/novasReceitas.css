@@ -29,23 +29,31 @@ body {
   background-color: #D49927;
 }
 
-.header{
-    width: 100%;
-    background-color: #f9b83a;
-    z-index: 1000;
-    padding: 20px;
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: space-between;
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #F9B83A;
+  z-index: 1000;
 }
 
-.centralizar {
-  display: block;
-  justify-content: center; 
-  align-items: center; 
-  height: 100px; 
+.img-logo {
+  text-align: center; 
 }
+
+.img-logo img {
+  width: 100%;
+  max-width: 200px; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
+}
+
+.img-logo img:hover {
+  transform: scale(1.12);
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -98,11 +106,10 @@ body {
 }
 
 button {
-  padding: 10px 20px;
+  padding: 0px 0px;
   font-size: 16px;
   color: #fff;
-  border: none;
-  border-radius: 5px;
+  border-radius: 18px;
   cursor: pointer;
 }
 
@@ -111,11 +118,97 @@ button:hover {
 }
 .botaomais{
   width: 100%;
-  max-width: 10;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
 }  
-.coloraçao{
-  background-color: palegreen;
+
+.botaovernovasreceitas {
+  background-color: orange; 
+  border: 2px solid #d5741a;
+    color: #fff; 
+    text-decoration: none; 
+    display: inline-block; 
+    cursor: pointer; 
+    font-size: 16px; 
+    padding: 10px 13px;
+
 }
+
+.header button {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+  .botaovernovasreceitas a {
+    color: #fff; 
+    text-decoration: none; 
+}
+  *.botaovernovasreceitas:hover {
+    transform: scale(1.10);
+}
+
+input.nome {
+  padding: 8px 16px;
+  border: 1px solid white;
+  border-radius: 16px;
+}
+
+input.tempo {
+  padding: 8px 16px;
+  border: 1px solid white;
+  border-radius: 16px;
+}
+
+input.rendimento {
+  padding: 8px 16px;
+  border: 1px solid white;
+  border-radius: 16px;
+}
+
+input.dificuldade {
+  padding: 8px 16px;
+  border: 1px solid white;
+  border-radius: 16px;
+}
+
+  .botaomais input { 
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 16px;
+}
+
+  .botaomais button {
+  margin-left: 5px; 
+  background-color: #F9B83A; 
+  color: white; 
+  border: none; 
+  cursor: pointer; 
+}
+
+.botaomais button:hover {
+  transform: scale(1.12);
+}
+
+ .coloraçao{
+  background-color: #28a745; 
+      color: white; 
+      padding: 10px 20px; 
+      border: none; 
+      border-radius: 12px; 
+      font-size: 18px; 
+      cursor: pointer; 
+      transition: background-color 0.3s; 
+      margin: 10px;
+}
+.partes{
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
 .novaReceita {
   display: block;
   margin: 10px auto;
@@ -123,7 +216,35 @@ button:hover {
   text-align: center;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+}
 
+.filtro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.qtd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.ingd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.modo_preparo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
 }
 
 .centralizar_texto {
@@ -200,24 +321,8 @@ button:hover {
   border-radius: 5px; 
 }
 
-.botaovernovasreceitas{
-background-color: #5eb4a6; 
-  color: #fff;
-  padding: 10px 20px; 
-  border: none; 
-  text-decoration: none; 
-  display: inline-block; 
-  cursor: pointer; 
-  font-size: 16px; 
-  border-radius: 5px; 
-}
-.botaovernovasreceitas a {
-  color: #fff; 
-  text-decoration: none; 
-}
-.botaovernovasreceitas:hover {
-  background-color: #5eb4a6; 
-}
+
+
 
 footer {
   margin-top: 30px;
@@ -228,7 +333,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px 0;
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
