@@ -29,15 +29,20 @@ const createRecipeCard = (receita) => {
   const card = document.createElement('div');
   card.classList.add('card', 'telacard');
 
+  const link = document.createElement('a'); 
+  link.href = `/codigo/pagina-receita/pagReceita.html?id=${receita.id}`; 
+  link.classList.add('recipe-link');
+
   const img = document.createElement('img');
   img.src = receita.imagem;
   img.classList.add('card-img-top');
   img.alt = 'Imagem da receita';
 
+
   const cardBody = document.createElement('div');
   cardBody.classList.add('card-body');
 
-  const title = document.createElement('h5');
+  const title = document.createElement('h4');
   title.classList.add('card-title');
   title.textContent = receita.nome;
 
@@ -46,13 +51,15 @@ const createRecipeCard = (receita) => {
   deleteButton.classList.add('btn', 'btn-danger');
   deleteButton.onclick = () => deleteRecipe(receita.id);
 
-  cardBody.appendChild(title);
-  cardBody.appendChild(deleteButton);
+  link.appendChild(img);
+  link.appendChild(title);
+  card.appendChild(link);
 
-  card.appendChild(img);
   card.appendChild(cardBody);
-
+  
+  cardBody.appendChild(deleteButton);
   cardDiv.appendChild(card);
+
 
   return cardDiv;
 };

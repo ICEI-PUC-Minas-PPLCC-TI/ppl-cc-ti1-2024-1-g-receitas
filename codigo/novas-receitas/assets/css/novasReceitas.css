@@ -1,6 +1,11 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  height: 100%;
+}
+
 body {
-  background-color: #D5741A;
-  min-height: 100vh;
+  background-color: #e8c98d;
 }
 
 .container {
@@ -24,22 +29,22 @@ body {
   background-color: #D49927;
 }
 
-header {
-  background-color: #F9B83A;
-  padding: 20px;
-  text-align: center;
-  color: #333;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header{
+    width: 100%;
+    background-color: #f9b83a;
+    z-index: 1000;
+    padding: 20px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .centralizar {
-display: flex;
-justify-content: center; 
-align-items: center; 
-height: 100px; 
+  display: block;
+  justify-content: center; 
+  align-items: center; 
+  height: 100px; 
 }
 .dropdown {
   position: relative;
@@ -111,40 +116,82 @@ button:hover {
 .coloraçao{
   background-color: palegreen;
 }
-.novaReceita{
-  margin: auto;
+.novaReceita {
+  display: block;
+  margin: 10px auto;
   padding-bottom: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.centralizar_texto{
   text-align: center;
-  color: white;
+  justify-content: center;
+  align-items: center;
+
 }
+
+.centralizar_texto {
+  display: block;
+  width: fit-content;
+  margin: 50px auto;
+  padding: 10px 15px;
+  background-color: orange;
+  color: white;
+  position: relative;
+  text-align: center;
+  border-radius: 18px;
+  box-shadow: 0 0 0 2px #d5741a;
+}
+
+
+
+
+
 .telacard {
+  margin: 30px 0 50px 0;
   height: 100%;
-  border: 1px solid #ccc; 
+  border: 1px solid #d5741a; 
   border-radius: 5px; 
   margin-bottom: 20px; 
+  background-color: transparent;
 }
+
+.telacard:hover {
+  transform: scale(1.05);
+}
+
+.card a {
+  text-decoration: none;
+}
+
 .telacard .card-body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 }
+
 .telacard .card-title {
-  font-size: 1.25rem;
-  margin-bottom: 0; 
+  background-color: #d5741a;
+  padding: 5px;  
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
 }
+
 .telacard img {
-  height: 200px;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
   object-fit: cover;
-  border-top-left-radius: 5px; 
-  border-top-right-radius: 5px; 
+  border-radius: 15px 15px 0 0;
+  padding: 3px 3px 0 3px;
 }
+
+#receitas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding: 0 24px 24px 24px;
+}
+
 .telacard button {
   margin-top: auto;
 }
@@ -152,6 +199,7 @@ button:hover {
   height: 100%;
   border-radius: 5px; 
 }
+
 .botaovernovasreceitas{
 background-color: #5eb4a6; 
   color: #fff;
@@ -169,4 +217,39 @@ background-color: #5eb4a6;
 }
 .botaovernovasreceitas:hover {
   background-color: #5eb4a6; 
+}
+
+footer {
+  margin-top: 30px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer a {
+  color: #D49927;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #F9B83A;
 }

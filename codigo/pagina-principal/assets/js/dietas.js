@@ -15,12 +15,10 @@ const loadData = async ()  => {
 
   receitas.forEach(receita => {
     receitasContainer.innerHTML += `
-        <div class="col">
-          <a href="/codigo/pagina-receita/pagReceita.html?id=${receita.id}" class="card">
-            <img src="${receita.imagem}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">${receita.nome}</h5>
-            </div>
+        <div class="receitas">
+          <a href="/codigo/pagina-receita/pagReceita.html?id=${receita.id}" class="caixa-receita">
+            <img src="${receita.imagem}" class="imagem-receita" alt="...">
+              <h4 class="nome-receita">${receita.nome}</h4>
           </a>
         </div>
     `

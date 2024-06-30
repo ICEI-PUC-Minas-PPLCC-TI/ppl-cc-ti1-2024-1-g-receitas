@@ -1,20 +1,49 @@
-html{
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: white;
+html {
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     height: 100%;
 }
 
-.header{
-    width: 100;
-    background-color: #f9b83a;
-    z-index:1000;
-    padding: 20px;
+body {
+    background-color: #e8c98d;
 }
 
-div.links { 
-    text-align: right;
-    justify-content: right;
+.header{
+    width: 100%;
+    background-color: #f9b83a;
+    z-index: 1000;
+    padding: 20px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img-logo img{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+}
+
+.img-logo img:hover {
+    transform: scale(1.2);
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+}
+
+div.links {
+    display: flex;
+    gap: 10px;
 }
 
 div.links a {
@@ -27,7 +56,7 @@ div.links a {
     border-radius: 20px;
     font-size: 16px;
     cursor: pointer;
-    transition: all 0.3s ease
+    transition: all 0.3s ease;
 }
 
 div.links a:hover {
@@ -38,21 +67,6 @@ div.links a:hover {
     text-decoration: none;
     color: #333;
     font-size: 20px;
-}
-
-
-.img-logo img{
-    text-align: center;
-    justify-content: center;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    display: flex;
-}
-
-.img-logo img:hover {
-    transform: scale(1.2);
 }
 
 .dropvdown {
@@ -83,34 +97,44 @@ div.links a:hover {
     gap: 16px;
 }
 
-.sugestoes .sugestao{
+.caixa-receita {
+    border: 2px solid #d5741a;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
-    border: 1px solid #B20C0C;
-    border-radius: 10px;
-    padding: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform .3s ease;
+    text-decoration: none;
+    height: 100%;
 }
 
-.sugestao strong{
-    background-color: #D5741A;
-    text-align: center;
+.caixa-receita:hover {
+    transform: scale(1.12);
+}
+
+.imagem-receita {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    padding: 3px 3px 0 3px;
+}
+
+#receitas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+    padding: 0 24px 24px 24px;
+}
+
+.nome-receita {
+    background-color: #d5741a;
+    padding: 5px;  
     color: white;
-    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
 }
-
-.sugestao a {
-    display: inline-block;
-}
-  
-.sugestao img {
-    max-width: 100%;
-    height: auto;
-}
-
-.sugestao:hover {
-    transform: scale(1.1);
-}
-
 .container .carousel-sugestoes{
     grid-row: 2;
 }
@@ -119,6 +143,7 @@ div.links a:hover {
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .container h1{
@@ -128,7 +153,6 @@ div.links a:hover {
 }
 
 .carousel-inner{
-    font-family: Arial, Helvetica, sans-serif;
     text-align: right;
     color: black;
     border: 2px;
@@ -216,4 +240,113 @@ div.links a:hover {
 
 .dropdown:hover .dropbtn {
     background-color: #F9B83A;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: #D49927;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #F9B83A;
+}
+
+@media  (max-width: 1370px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .img-logo {
+        position: relative;
+        left: 0;
+        transform: none;
+        margin-bottom: 20px;
+    }
+
+    .links {
+        margin-left: 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .links a {
+        margin: 5px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .container .carousel-sugestoes {
+        grid-row: 3;
+    }
+
+}
+
+@media (max-width: 490px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .img-logo {
+        position: relative;
+        left: 0;
+        transform: none;
+        margin-bottom: 10px;
+    }
+
+    .links {
+        margin-left: 0;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links a {
+        margin: 5px 0;
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    #receitas {
+        grid-template-columns: 1fr;
+    }
+
+    .carousel .carousel-item img {
+        aspect-ratio: auto;
+    }
 }

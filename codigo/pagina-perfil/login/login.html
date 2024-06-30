@@ -12,20 +12,25 @@
 </head>
 
 <body>
+  <header class="header">
+    <div class="img-logo">
+        <a href="/codigo/pagina-principal/index.html"><img src="/codigo/pagina-cozinhar/assets/imgs/logo.png" alt=""></a>
+    </div>
+  </header>
+
   <div id="login">
-    <h3 class="h3 text-center text-white pt-5">Novo Usuário</h3>
     <div class="container">
       <div id="login-row" class="row justify-content-center align-items-center">
         <div id="login-column" class="col-md-6">
           <div id="login-box" class="col-md-12">
             <form id="login-form" class="form" method="post" onsubmit="loginUser (this)">
-              <h3 class="text-center text-info">Login</h3>
+              <h3 class="text-center info-text">Login</h3>
               <div class="form-group">
-                <label for="username" class="text-info">Usuário</label><br>
+                <label for="username" class="info-text">Usuário</label><br>
                                 <input type="text" name="username" id="username" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="password" class="text-info">Senha</label><br>
+                                <label for="password" class="info-text">Senha</label><br>
                                 <input type="password" name="password" id="password" class="form-control">
                             </div>
                             <div class="form-group text-right">                                
@@ -52,25 +57,25 @@
         <div class="modal-body">
             <div id="login-box" class="col-md-12">
                 <form id="login-form" class="form" method="post" onsubmit="loginUser (this)">
-                    <h3 class="text-center text-info">Novo usuário</h3>
+                    <h3 class="text-center info-text">Novo usuário</h3>
                     <div class="form-group">
-                        <label for="login" class="text-info">Usuário</label><br>
+                        <label for="login" class="info-text">Usuário</label><br>
                         <input type="text" name="txt_login" id="txt_login" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="nome" class="text-info">Nome completo</label><br>
+                        <label for="nome" class="info-text">Nome completo</label><br>
                         <input type="text" name="txt_nome" id="txt_nome" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="email" class="text-info">email</label><br>
+                        <label for="email" class="info-text">email</label><br>
                         <input type="text" name="txt_email" id="txt_email" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="senha" class="text-info">Senha</label><br>
+                        <label for="senha" class="info-text">Senha</label><br>
                         <input type="password" name="txt_senha" id="txt_senha" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="senha2" class="text-info">Confirmação de Senha</label><br>
+                        <label for="senha2" class="info-text">Confirmação de Senha</label><br>
                         <input type="password" name="txt_senha2" id="txt_senha2" class="form-control">
                     </div>
                 </form>
@@ -141,5 +146,13 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
-</body>
+
+    <footer class="footer">
+      <div class="container-footer">
+          <p>&copy; 2024 Receitas Fáceis. Todos os direitos reservados.</p>
+          <p>Website by <a href="https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-20241-1-receitas">GitHub Receitas Fáceis</a></p>
+      </div>
+    </footer>
+    
+  </body>
 </html>
