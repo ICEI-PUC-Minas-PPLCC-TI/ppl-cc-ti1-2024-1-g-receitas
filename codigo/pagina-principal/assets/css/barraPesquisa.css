@@ -1,27 +1,35 @@
 input{
-    width: 15%;
-    height: 25px;
-    padding-left: 10px;
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    padding: 0 15px;
     font-size: 15px;
     border: 1px solid white;
     border-radius: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
 .buscar{
-   background-image: linear-gradient(to bottom, #F9B83A 65%, #D49927 65%, #D49927 100%);
-   display: list-item;
+    background-image: linear-gradient(to bottom, #F9B83A 65%, #D49927 65%, #D49927 100%);
+    display: list-item;
     padding: 10px;
     align-items: center;
     justify-content: center;
     position: relative;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 #listarReceitas{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 91%;
+    max-width: 100%;
+    width: auto;
     display: none;
     position: absolute;
-    top: 70px;
+    top: 100%;
+    left 0;
+    z-index: 1;
 }
 #listarReceitas li a{
     display: flex;
@@ -32,11 +40,35 @@ input{
     border: 1px solid #ddd;
     background: #f6f6f6;
     padding: 12px;
+    transition: background 0.3s ease;
+    border-radius: 10px;
 }
 .item-name{
     margin-left: 15px;
 }
 #listarReceitas li a:hover{
-    background: #eee;
+    background: #F9B83A;
 
+}
+
+@media (max-width: 1370px) {
+    .buscar {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 20px; 
+    }
+
+    #listarReceitas {
+        min-width: 260px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto; 
+        position: absolute; 
+        top: 100%;
+        left: 50%; 
+        transform: translateX(-50%); 
+        z-index: 1; 
+    }
 }
