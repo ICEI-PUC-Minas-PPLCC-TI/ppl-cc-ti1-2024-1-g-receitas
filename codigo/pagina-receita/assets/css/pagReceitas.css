@@ -72,6 +72,38 @@ i#favoritoId-btn {
     color: black;
 }
 
+.avaliacao {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.star-icon {
+    font-size: 40px;
+    cursor: pointer;
+    color: #ffe500;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.star-icon::before {
+    content: "\2605";
+}
+
+.star-icon.ativo ~ .star-icon::before {
+    content: "\2606";
+}
+
+.star-icon:hover {
+    transform: scale(1.2);
+    color: #ffd700;
+}
+
+.star-icon.ativo:hover {
+    transform: scale(1.2);
+}
+
 img.receita-imagem {
     width: 100%;
     max-width: 1000px; 

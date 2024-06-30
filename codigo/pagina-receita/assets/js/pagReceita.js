@@ -21,6 +21,14 @@ document.addEventListener("DOMContentLoaded", function () {
             <button class="favorito-btn" data-id="${receita.id}">
                 <i id="favoritoId-btn" class="ph ph-bookmark-simple"></i>
             </button>
+              <ul class="avaliacao">
+                  <li class="star-icon ativo" data-avaliacao="1"></li>
+                  <li class="star-icon" data-avaliacao="2"></li>
+                  <li class="star-icon" data-avaliacao="3"></li>
+                  <li class="star-icon" data-avaliacao="4"></li>
+                  <li class="star-icon" data-avaliacao="5"></li>
+              </ul>
+        
             <img src="${receita.imagem}" class="receita-imagem"/>
             <p class="receita-descricao">${receita.tempo} - ${
         receita.rendimento
