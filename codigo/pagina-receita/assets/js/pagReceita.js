@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
               ${receita.modo_preparo.map(passo => `<li>${passo}</li>`).join("")}
           </ul>
           <div class="comentarios">
-              <h3>Comentários</h3>
+              <h3 class="comentario">Comentários</h3>
               <form id="comentarioForm">
               <textarea id="comentarioTextarea" placeholder="Escreva um comentário..."></textarea>
               <button>Enviar</button>
