@@ -1,4 +1,3 @@
-// Array de objetos representando as receitas
 var receitas = [
     {
         id: "1",
@@ -2638,32 +2637,32 @@ function encontrarReceitaPorId(id) {
             return receitas[i];
         }
     }
-    return null; // Retorna null se a receita não for encontrada
+    return null; 
 }
 
 // Função para exibir uma receita específica por seu ID
 function exibirReceitaPorId(id) {
     var receita = encontrarReceitaPorId(id);
     if (receita) {
-        // Limpar o conteúdo anterior
+        
         var container = document.getElementById('receitasContainer');
         container.innerHTML = "";
 
         var receitaDiv = document.createElement("div");
-        receitaDiv.classList.add("receita"); // Adiciona a classe "receita" ao div principal
+        receitaDiv.classList.add("receita"); 
 
-        // Criar a div com a imagem da logo e adicionar acima do título da receita
+        
         var imageContainerDiv = document.createElement("div");
         imageContainerDiv.classList.add("image-container");
 
         var logoImg = document.createElement("img");
-        logoImg.src = "Img/_Logo.png"; // Caminho da imagem da logo
-        logoImg.alt = "Logo"; // Texto alternativo para acessibilidade
+        logoImg.src = "Img/_Logo.png"; 
+        logoImg.alt = "Logo"; 
 
         imageContainerDiv.appendChild(logoImg);
         receitaDiv.appendChild(imageContainerDiv);
 
-        // Adicionar título da receita
+        
         var tituloReceita = document.createElement("h1");
         tituloReceita.innerText = receita.titulo;
         receitaDiv.appendChild(tituloReceita);
@@ -2682,12 +2681,12 @@ function exibirReceitaPorId(id) {
         imagemReceita.appendChild(img);
         receitaDiv.appendChild(imagemReceita);
         
-        // Adicionando o título "Ingredientes"
+        
         var tituloIngredientes = document.createElement("h2");
         tituloIngredientes.innerText = "Ingredientes";
         receitaDiv.appendChild(tituloIngredientes);
 
-        // Adicionando estilos CSS para a seção de ingredientes
+        
         var ingredientesDiv = document.createElement("div");
         ingredientesDiv.className = "ingredientes";
         receita.ingredientes.forEach(function(ingrediente) {
@@ -2697,12 +2696,12 @@ function exibirReceitaPorId(id) {
         });
         receitaDiv.appendChild(ingredientesDiv);
 
-        // Adicionando o título "Modo de preparo"
+        
         var tituloModoPreparo = document.createElement("h2");
         tituloModoPreparo.innerText = "Modo de preparo";
         receitaDiv.appendChild(tituloModoPreparo);
 
-        // Adicionando estilos CSS para a seção de modo de preparo
+        
         var modoPreparoDiv = document.createElement("div");
         modoPreparoDiv.className = "modo-preparo";
         receita.modo_preparo.forEach(function(passo) {

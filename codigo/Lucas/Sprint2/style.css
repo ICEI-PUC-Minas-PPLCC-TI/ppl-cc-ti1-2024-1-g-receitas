@@ -14,21 +14,21 @@ img {
 
 h1 {
     text-align: center;
-    color: white; /* Cor do texto */
+    color: white; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 15px 25px; /* Espaçamento interno */
-    border-radius: 20px; /* Bordas arredondadas */
+    padding: 15px 25px; 
+    border-radius: 20px; 
     background: linear-gradient(to bottom, #F9B83A 65%, #D49927 65%, #D49927 100%);
-    display: flex; /* Usando flexbox */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Alinha verticalmente */
-    margin-top: 20px; /* Adiciona espaço entre a imagem e o texto */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px; 
 }
 
 .comida img {
-    width: 700px; /* Defina a largura desejada */
-    height: auto; /* Mantenha a proporção de aspecto */
-    border: 3px solid black; /* Adiciona uma borda branca com 3 pixels de espessura */
+    width: 700px;
+    height: auto; 
+    border: 3px solid black; 
     border-radius: 20px;
 }
 
@@ -40,30 +40,30 @@ h2,
 p,
 .elementos::after {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #fcd683; /* Cor de fundo */
+    background-color: #fcd683; 
     
-    padding: 10px; /* Espaçamento interno */
+    padding: 10px; 
 }
 
 h2::after {
-    content: ":"; /* Adiciona os dois pontos após o texto */
+    content: ":"; 
 }
 
 .elementos {
-    position: relative; /* Adiciona posicionamento relativo para que possamos posicionar o pseudo-elemento */
+    position: relative; 
 }
 
 .elementos::after {
-    content: ""; /* Adiciona um conteúdo vazio ao pseudo-elemento */
-    display: block; /* Transforma o pseudo-elemento em um bloco */
-    height: 20px; /* Define a altura do espaço entre os elementos */
-    position: absolute; /* Posiciona o pseudo-elemento de forma absoluta */
-    bottom: -20px; /* Move o pseudo-elemento para baixo, criando o espaço entre os elementos */
-    left: 0; /* Alinha o pseudo-elemento à esquerda */
-    right: 0; /* Alinha o pseudo-elemento à direita */
+    content: ""; 
+    display: block; 
+    height: 20px; 
+    position: absolute; 
+    bottom: -20px; 
+    left: 0; 
+    right: 0; 
 }
 
 h2,
 p {
-    margin: 0; /* Remover margem */
+    margin: 0; 
 }
