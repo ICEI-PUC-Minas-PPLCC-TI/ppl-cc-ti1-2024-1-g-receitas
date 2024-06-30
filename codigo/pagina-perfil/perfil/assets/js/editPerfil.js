@@ -1,8 +1,12 @@
 const nomeIpt = document.querySelector("#nome")
+const loginIpt = document.querySelector("#login")
+const emailIpt = document.querySelector("#email")
 const bioIpt = document.querySelector("#bio")
 const saveBtn = document.querySelector(".save")
 
 const nome = document.querySelector(".nome")
+const login = document.querySelector(".login")
+const email = document.querySelector(".email")
 const bio = document.querySelector(".bio")
 
 function carregarPerfil() {
@@ -10,6 +14,8 @@ function carregarPerfil() {
         return res.json()
     }).then((data) => {
         nome.textContent = data.nome
+        login.textContent = data.login
+        email.textContent = data.email
         bio.textContent = data.bio
     })
 }
@@ -29,6 +35,8 @@ saveBtn.onclick = async () => {
         method: "PATCH",
         body: JSON.stringify({
             nome: nomeIpt.value,
+            login: loginIpt.value,
+            email: emailIpt.value,
             bio: bioIpt.value
         }),
     }).then(() => {

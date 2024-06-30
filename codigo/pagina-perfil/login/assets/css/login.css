@@ -14,14 +14,29 @@ body {
     background-color: #E8C98D;
 }
 
+.form-group input {
+    border-radius: 10px;
+}
+
+#login{
+    margin-top: 170px;
+}
+
 .info-text {
-    color: ;
+    margin-top: 10px;
+}
+
+.form-group label {
+    margin: 20px 0 0 0;
+    font-size: 18px;
 }
 
 .btn-info {
     background-color: #F9B83A;
-    border-color: #D5401F;
+    border: 1px solid #d5741a;
+    border-radius: 10px;
     color: #fff;
+    margin-top: 18px;
 }
 
 .header {
@@ -42,7 +57,7 @@ body {
     max-width: 200px; 
     height: auto; 
     display: block; 
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .img-logo img:hover {
@@ -56,10 +71,6 @@ body {
     margin: 0 auto;
 }
 
-.col-md-6 {
-    text-align: center;
-}
-
 footer {
     margin-top: 30px;
 }
@@ -69,10 +80,9 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: 100%;
-    margin-top: auto;
 }
 
 .footer .container {
@@ -106,7 +116,10 @@ footer {
 
 .modal-content {
     background-color: #E8C98D;
+    margin-top: 140px;
 }
+
+
 
 .modal-title {
     margin-right: 10px;
@@ -124,4 +137,3 @@ footer {
     border: none;
     font-size: 25px;
 }
-

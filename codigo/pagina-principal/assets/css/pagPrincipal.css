@@ -8,6 +8,10 @@ body {
     background-color: #e8c98d;
 }
 
+.main-content {
+    flex: 1;
+}
+
 .header{
     width: 100%;
     background-color: #f9b83a;
@@ -243,10 +247,7 @@ div.links a:hover {
 }
 
 footer {
-    margin-top: 30px;
-}
-
-.footer {
+    margin-top: 50px;
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -254,7 +255,6 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    margin-top: auto;
 }
 
 .footer .container {
