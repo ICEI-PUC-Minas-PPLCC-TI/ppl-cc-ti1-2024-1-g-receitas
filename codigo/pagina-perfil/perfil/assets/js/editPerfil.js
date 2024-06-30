@@ -5,7 +5,7 @@ const emailIpt = document.querySelector("#email")
 const bioIpt = document.querySelector("#bio")
 const saveBtn = document.querySelector(".save")
 
-const lvl = document.querySelector(".lvl")
+const lvl = document.querySelector(".LVL")
 const nome = document.querySelector(".nome")
 const login = document.querySelector(".login")
 const email = document.querySelector(".email")
@@ -51,9 +51,9 @@ saveBtn.onclick = async () => {
 
 fetch("https://d2c501fa-4177-4d7b-a69b-81eb77e71b05-00-1wjvhqjrblfl5.kirk.replit.dev/feitos")
     .then(res => res.json())
-    .then(data => {
+    .then(feitos => {
         let nivel = Math.floor(feitos.length / 3) + 1;
-        lvl.textContent = data.nivel;
+        lvl.textContent = `LVL ${nivel}`;
     })
     .catch(err => {
         console.error('Erro ao carregar feitos: ', err);
