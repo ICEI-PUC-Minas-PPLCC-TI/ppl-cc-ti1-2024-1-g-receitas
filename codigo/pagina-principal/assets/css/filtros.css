@@ -24,22 +24,31 @@ body {
     background-color: #D49927;
 }
 
-header {
-    background-color: #F9B83A;
-    padding: 20px;
-    text-align: center;
-    color: #333;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #F9B83A;
+  z-index: 1000;
 }
 
-.centralizar {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.img-logo {
+  text-align: center;
 }
+
+.img-logo img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.img-logo img:hover {
+  transform: scale(1.12);
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -135,7 +144,6 @@ header {
     position: relative;
     bottom: 0;
     width: 100%;
-    margin-top: auto;
 }
 
 .footer .container {

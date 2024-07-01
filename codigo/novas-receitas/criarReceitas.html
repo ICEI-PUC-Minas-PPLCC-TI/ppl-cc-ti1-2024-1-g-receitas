@@ -14,38 +14,41 @@
 </head>
 
 <body>
-  <header class="header"><a href="/codigo/pagina-principal/index.html"> <img src="assets/imgs/_Logo.png" alt="dawdaw" class="centralizar" width="200" height="100">
+  <header class="header">
+    <div class="img-logo">
+      <a href="/codigo/pagina-principal/index.html"> <img src="assets/imgs/_Logo.png" alt="dawdaw" width="200" height="100">
       </a>
-      <button class="botaovernovasreceitas"><a href="verNovasReceitas.html">pagina novas receitas</a></button>
+    </div>
+      <button class="botaovernovasreceitas"><a href="verNovasReceitas.html">Minhas Receitas</a></button>
   </header>
 
   <div class="row row-cols-1 row-cols-md-2 g-4 receitas"></div>
   <h1 class="centralizar_texto">Criação de receitas</h1>
   <form id="novaReceita" class="novaReceita">
-    <div id="">
-      <input type="text" class="nome" placeholder="nome...">
+    <div class="partes">
+      <input type="text" class="nome" placeholder="Nome...">
     </div>
     </div>
-    <div id="">
-      <input type="text" class="tempo" placeholder="tempo...">
+    <div class="partes">
+      <input type="text" class="tempo" placeholder="Tempo...">
     </div>
-    <div id="">
-      <input type="text" class="rendimento" placeholder="rendimento...">
+    <div class="partes">
+      <input type="text" class="rendimento" placeholder="Rendimento...">
     </div>
-    <div id="">
-      <input type="text" class="dificuldade" placeholder="dificuldade...">
+    <div class="partes">
+      <input type="text" class="dificuldade" placeholder="Dificuldade...">
     </div>
-    <div id="filtros" class="botaomais">
-      <input type="text" class="filtro" placeholder="filtro...">
+    <div id="filtros" class="botaomais partes">
+      <input type="text" class="filtro" placeholder="Filtro...">
       <button type="button" onclick="addfiltros()"><img src="assets/imgs/icons8-plus-32.png" alt=""></button>
     </div>
-    <div id="ingredientes" class="botaomais">
+    <div id="ingredientes" class="botaomais partes">
       <input type="text" class="qtd" placeholder="Quantidade...">
       <input type="text" class="ingd" placeholder="Ingrediente...">
       <button type="button" onclick="adicionarBarra()"><img src="assets/imgs/icons8-plus-32.png" alt=""></button>
     </div>
-    <div id="modo_preparo" class="botaomais">
-      <input type="text" class="modo_preparo" placeholder="modo_preparo...">
+    <div id="modo_preparo" class="botaomais partes">
+      <input type="text" class="modo_preparo" placeholder="Modo de preparo...">
       <button type="button" onclick="addmodo_preparo()"><img src="assets/imgs/icons8-plus-32.png" alt=""></button>
     </div>
     <button type="submit" class="coloraçao">enviar</button>

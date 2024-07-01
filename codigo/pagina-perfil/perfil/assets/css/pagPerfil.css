@@ -31,6 +31,10 @@ body {
     margin: 0 auto;
 }
 
+.img-logo img:hover {
+    transform: scale(1.12);
+}
+
 .avatar {
     margin-top: 40px;
     text-align: center;
@@ -74,6 +78,30 @@ body {
     text-align: center;
 }
 
+.login {
+    font-size: 20px;
+    text-align: center;
+    padding: 6px;
+    color: black;
+    background-color: #F9B83A;
+    width: max-content;
+    border-radius: 15px;
+    margin: 10px auto;
+    max-width: 600px;
+}
+
+.email {
+    font-size: 20px;
+    text-align: center;
+    padding: 6px;
+    color: black;
+    background-color: #F9B83A;
+    width: max-content;
+    border-radius: 15px;
+    margin: 10px auto;
+    max-width: 600px;
+}
+
 .LVL {
     font-size: large;
     padding: 6px;
@@ -90,13 +118,12 @@ body {
     color: black;
     background-color: #F9B83A;
     width: max-content;
-    border-radius: 10px;
-    margin: 0 auto;
+    border-radius: 15px;
+    margin: 50px auto;
     max-width: 600px;
-    margin-top: auto;
 }
 
-.MyReceitas {
+.Menu {
     font-size: 40px;
     background-color: #D58C1F;
     width: max-content;
@@ -173,8 +200,40 @@ body {
     gap: 6px;
 }
 
+.links {
+    display: flex;
+    gap: 10px;
+}
+
+div.links {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+div.links a {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #D49927;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+div.links a:hover {
+    transform: scale(1.12);
+}
+
+
+
 footer {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .footer {
@@ -185,7 +244,6 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    margin-top: auto;
 }
 
 .footer .container {
@@ -207,3 +265,4 @@ footer {
 .footer a:hover {
     color: #F9B83A;
 }
+
